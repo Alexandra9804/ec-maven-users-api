@@ -33,7 +33,7 @@ pipeline {
                     sh """
                         mvn sonar:sonar \
                         -Dsonar.organization=alexandra9804 \
-                        -Dsonar.projectKey=${env.REPO_NAME} \
+                        -Dsonar.projectKey=alexandra9804_${env.REPO_NAME} \
                         -Dsonar.projectName=${env.REPO_NAME} \
                         -Dsonar.sources=src/main/java \
                         -Dsonar.java.binaries=target/classes \
